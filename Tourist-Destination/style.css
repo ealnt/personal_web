@@ -75,7 +75,6 @@ a.active{
     line-height: 1.5;
 }
 
-/* --- Kartu --- */
 .card_grid{
     width: 90%;
     max-width: 1000px;
@@ -149,7 +148,6 @@ a.active{
     color: #b74b4b;
 }
 
-/* --- Footer sosial --- */
 .social_section{
     font-size: 1rem;
     color: white;
@@ -171,7 +169,6 @@ a.active{
     .social_section{ width: 100%; }
 }
 
-/* --- Tombol menu (hamburger), hanya tampil di HP --- */
 .menu_toggle{
     display: none;
     flex-direction: column;

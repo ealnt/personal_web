@@ -51,7 +51,6 @@ a.active{
                  0 0 50px #b74b4b;
 }
 
-/* --- Judul halaman --- */
 .page_title{
     margin-top: 20px;
     margin-bottom: 35px;
@@ -222,9 +221,7 @@ img{ max-width: 100%; }
     .card_grid{ width: 100%; grid-template-columns: 1fr; }
 }
 
-/* ===================== Khusus halaman Hometown ===================== */
 
-/* --- Pengantar --- */
 .intro_section{
     width: 90%;
     max-width: 1000px;
@@ -274,7 +271,6 @@ img{ max-width: 100%; }
     margin-top: 10px;
 }
 
-/* --- Blok section --- */
 .section_block{
     width: 90%;
     max-width: 1000px;
@@ -298,7 +294,6 @@ img{ max-width: 100%; }
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* --- Fakta singkat --- */
 .fact_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -324,7 +319,6 @@ img{ max-width: 100%; }
     line-height: 1.4;
 }
 
-/* --- Timeline sejarah --- */
 .timeline{
     max-width: 700px;
     margin: 0 auto;
@@ -376,7 +370,6 @@ img{ max-width: 100%; }
     line-height: 1.5;
 }
 
-/* --- Ajakan lanjut jelajah --- */
 .cta_block{
     text-align: center;
 }
