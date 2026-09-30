@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#22212c">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8F%3C/text%3E%3C/svg%3E">
+    <title>Local Food | Portofolio Pribadi</title>
+</head>
+<body>
+    <header>
+        <div class="Poto_Profil">
+            <a href="../index.html">Elan</a>
+        </div>
+
+        <button class="menu_toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+        <nav>
+            <a href="../hometown/index.html">Hometown</a>
+            <a href="../profile/index.html">Profile</a>
+            <a href="../Local-Food/index.html" class="active">Local Food</a>
+            <a href="../Tourist-Destination/index.html">Tourist Destination</a>
+        </nav>
+    </header>
+
+    <div class="page_title">
+        <h1>Kuliner <span>Lokal</span></h1>
+        <p>Makanan khas dari Jambi</p>
+    </div>
+
+    
+
+    <section class="card_grid">
+            
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/ikan_patin.jpeg" alt="Gulai ikan patin">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Kuliner</span>
+                    <h3>Gulai Ikan Patin</h3>
+                    <p>Ikan patin dimasak dengan kuah gulai santan berwarna kuning yang kaya bumbu, hidangan khas Sumatra.</p>
+                    <ul class="item_meta">
+                        <li><span>Rasa:</span> Gurih, pedas</li>
+                        <li><span>Cocok untuk:</span> Makan siang</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/tempoyak.jpg" alt="Tempoyak">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Kuliner</span>
+                    <h3>Tempoyak</h3>
+                    <p>Olahan durian fermentasi yang biasa dimasak bersama ikan atau dijadikan sambal, aromanya khas dan kuat.</p>
+                    <ul class="item_meta">
+                        <li><span>Rasa:</span> Asam, gurih, pedas</li>
+                        <li><span>Cocok untuk:</span> Makan siang</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/gulai_tepek.jpg" alt="Gulai tepek ikan">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Kuliner</span>
+                    <h3>Gulai Tepek Ikan</h3>
+                    <p>Adonan ikan giling yang dipipihkan lalu dimasak dalam kuah gulai, mirip pempek tetapi berkuah santan.</p>
+                    <ul class="item_meta">
+                        <li><span>Rasa:</span> Gurih, pedas</li>
+                        <li><span>Cocok untuk:</span> Makan siang atau malam</li>
+                    </ul>
+                </div>
+            </article>
+    </section>
+
+    <div class="social_section">
+        <a href="https://github.com/ealnt" target="_blank">Github</a>
+        <a href="https://instagram.com/fakhrianelanta" target="_blank">Instagram</a>
+        <a href="mailto:fakhrianelanta10.3@gmail.com">Email</a>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.filter_btn');
+        const cards = document.querySelectorAll('.item_card');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const f = btn.dataset.filter;
+                cards.forEach(c => c.classList.toggle('hidden', f !== 'all' && c.dataset.city !== f));
+            });
+        });
+    </script>
+    <script src="../nav.js"></script>
+</body>
+</html>

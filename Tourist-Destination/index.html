@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#22212c">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8F%3C/text%3E%3C/svg%3E">
+    <title>Tourist Destination | Portofolio Pribadi</title>
+</head>
+<body>
+    <header>
+        <div class="Poto_Profil">
+            <a href="../index.html">Elan</a>
+        </div>
+
+        <button class="menu_toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+        <nav>
+            <a href="../hometown/index.html">Hometown</a>
+            <a href="../profile/index.html">Profile</a>
+            <a href="../Local-Food/index.html">Local Food</a>
+            <a href="../Tourist-Destination/index.html" class="active">Tourist Destination</a>
+        </nav>
+    </header>
+
+    <div class="page_title">
+        <h1>Destinasi <span>Wisata</span></h1>
+        <p>Tempat-tempat yang menarik dikunjungi Jambi, dari wisata sejarah sampai alam.</p>
+    </div>
+
+    
+
+    <section class="card_grid">
+            
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/candi_jambi.jpg" alt="Candi Muaro Jambi">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Sejarah</span>
+                    <h3>Candi Muaro Jambi</h3>
+                    <p>Kompleks candi Buddha di tepi Sungai Batanghari, salah satu situs peninggalan kuno terluas di Asia Tenggara.</p>
+                    <ul class="item_meta">
+                        <li><span>Lokasi:</span> Kab. Muaro Jambi</li>
+                        <li><span>Cocok untuk:</span> Bersepeda keliling situs</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/kebun_teh.jpg" alt="Kebun Teh Kayu Aro">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Alam</span>
+                    <h3>Kebun Teh Kayu Aro</h3>
+                    <p>Hamparan kebun teh di kaki Gunung Kerinci yang berhawa sejuk dengan pemandangan gunung di latar belakang.</p>
+                    <ul class="item_meta">
+                        <li><span>Lokasi:</span> Kab. Kerinci</li>
+                        <li><span>Cocok untuk:</span> Menikmati udara sejuk</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/danau.jpg" alt="Danau Gunung Tujuh">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Alam</span>
+                    <h3>Danau Gunung Tujuh</h3>
+                    <p>Danau vulkanik di ketinggian yang dikelilingi hutan, bisa dicapai dengan trekking dari kaki gunung.</p>
+                    <ul class="item_meta">
+                        <li><span>Lokasi:</span> Kab. Kerinci</li>
+                        <li><span>Cocok untuk:</span> Trekking ringan</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="item_card" data-city="jambi">
+                <div class="item_media"><span>
+                    <img src="../assets/air_terjun.jpg" alt="Air Terjun Telun Berasap">
+                </span></div>
+                <div class="item_body">
+                    <span class="tag">Jambi</span><span class="tag">Alam</span>
+                    <h3>Air Terjun Telun Berasap</h3>
+                    <p>Air terjun bertingkat di kawasan Kerinci dengan percikan air yang membentuk kabut tipis di sekitarnya.</p>
+                    <ul class="item_meta">
+                        <li><span>Lokasi:</span> Kab. Kerinci</li>
+                        <li><span>Cocok untuk:</span> Foto alam</li>
+                    </ul>
+                </div>
+            </article>
+    </section>
+
+    <div class="social_section">
+        <a href="https://github.com/ealnt" target="_blank">Github</a>
+        <a href="https://instagram.com/fakhrianelanta" target="_blank">Instagram</a>
+        <a href="mailto:fakhrianelanta10.3@gmail.com">Email</a>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.filter_btn');
+        const cards = document.querySelectorAll('.item_card');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const f = btn.dataset.filter;
+                cards.forEach(c => c.classList.toggle('hidden', f !== 'all' && c.dataset.city !== f));
+            });
+        });
+    </script>
+    <script src="../nav.js"></script>
+</body>
+</html>

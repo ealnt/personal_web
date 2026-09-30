@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Anonymice';
+    src: url('fonts/anonymice-regular-latin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   border: none;
+   font-family: 'Anonymice', sans-serif;
+    
+}
+
+body {
+    background-color: rgb(20, 24, 45);
+    padding: 60px;
+}
+
+header{
+    background-color: rgb(34, 33, 44);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.Poto_profil{
+    margin-top: 50px;
+    font-size: 3rem;
+    color: bisque;
+}
+
+.Poto_profil:hover{
+    transform: scale(1.1);
+
+}
+
+.foto{
+    border-radius: 999px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+a{
+    font-size: 1rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.Home{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.Home_content{
+    width: 100%;
+    max-width: 600px;
+    font-size: 1rem;
+    color: beige;
+}
+
+.social_section{
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.social_section a{
+    margin-left: 0;
+}
+
+a:hover,
+a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    text-shadow: 0 0 25px #b74b4b, 
+                 0 0 50px #b74b4b;
+    transform: scale(1, 1);
+}
+
+.Home_content h1 span{
+    color: #b74b4b;
+}
+
+
+
+
+.Home_content p{
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.hero_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.btn{
+    display: inline-block;
+    margin-left: 0;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: #b74b4b;
+    color: white;
+    border: 2px solid #b74b4b;
+    text-shadow: none;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    text-shadow: none;
+}
+
+.btn_outline{
+    background: transparent;
+    color: beige;
+    border: 2px solid rgba(245, 245, 220, 0.4);
+}
+
+.btn_outline:hover{
+    background: #b74b4b;
+    color: white;
+    border: 2px solid #b74b4b;
+}
+
+.section_block{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 70px auto;
+    color: beige;
+}
+
+.section_block > h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section_block > h2 span{
+    color: #b74b4b;
+}
+
+.fact_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.fact_card{
+    background-color: rgb(34, 33, 44);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid #b74b4b;
+}
+
+.fact_label{
+    font-size: 0.85rem;
+    color: #b74b4b;
+    margin-bottom: 8px;
+}
+
+.fact_card h3{
+    font-size: 1.15rem;
+    color: white;
+    line-height: 1.4;
+}
+
+.explore_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.explore_card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 0;
+    padding: 22px;
+    background-color: rgb(34, 33, 44);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    transition: 0.3s ease;
+}
+
+.explore_card:hover{
+    transform: translateY(-4px);
+    border-bottom: none;
+    text-shadow: none;
+    box-shadow: 0 6px 20px rgba(183, 75, 75, 0.25);
+}
+
+.explore_card h3{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.explore_card p{
+    font-size: 0.95rem;
+    color: #b0b3c5;
+    line-height: 1.5;
+}
+
+.explore_link{
+    margin-top: auto;
+    padding-top: 6px;
+    font-size: 0.9rem;
+    color: #b74b4b;
+}
+
+.tag{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: beige;
+    background: rgba(183, 75, 75, 0.2);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.menu_toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.menu_toggle span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.menu_toggle.open span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+.menu_toggle.open span:nth-child(2){ opacity: 0; }
+.menu_toggle.open span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+
+img{ max-width: 100%; }
+
+@media (max-width: 800px){
+    body{ padding: 90px 16px 20px 16px; }
+
+    header{ flex-wrap: wrap; padding: 8px 16px; }
+    .menu_toggle{ display: flex; }
+    header nav{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 8px 0 12px 0;
+    }
+    header nav.open{ display: flex; }
+    header nav a{
+        margin-left: 0;
+        padding: 12px 0;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(245, 245, 220, 0.1);
+    }
+    header nav a:hover,
+    header nav a.active{ border-bottom: 1px solid #b74b4b; }
+    .Poto_Profil a{ margin-left: 0; font-size: 1.2rem; }
+
+    .Home{
+        padding: 20px 0 50px 0;
+        flex-direction: column;
+        gap: 28px;
+        text-align: center;
+    }
+    .Home_img{ width: 60%; max-width: 240px; }
+    .Home_content h1{ font-size: 1.8rem; }
+    .hero_buttons{ justify-content: center; }
+
+    .section_block{ width: 100%; margin-bottom: 50px; }
+    .section_block > h2{ font-size: 1.5rem; margin-bottom: 20px; }
+    .fact_grid{ grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fact_card{ padding: 16px; }
+    .fact_card h3{ font-size: 1rem; }
+    .explore_grid{ grid-template-columns: 1fr; gap: 14px; }
+
+    .social_section{ flex-wrap: wrap; gap: 12px 24px; padding: 20px 10px; }
+}
